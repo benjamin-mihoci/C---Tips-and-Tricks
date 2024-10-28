@@ -4,7 +4,7 @@
 ### IF redundancy
 `if (something != 0)` is reduntant, use `if (something)` instead
 
-### Tip #2
+### for loop doesn't need to have arguments
 `for (;;)` is basically the same as `while (true)`
 
 ### Tip #3
@@ -12,7 +12,7 @@
 EXIT_FAILURE gives a non-zero value
 
 ### Unsigned addition
-`   if (ui > UINT_MAX - sum)\n
+`   if (ui > UINT_MAX - sum)
     {
         too_big();
     }
@@ -30,4 +30,10 @@ EXIT_FAILURE gives a non-zero value
     {
         i = i - j;
     }`
+### Avoid overflow when returning absolute values
+`int abs(int i)
+{
+    return (i >=0) ? i : -(unsigned)i;
+}`
+
 
