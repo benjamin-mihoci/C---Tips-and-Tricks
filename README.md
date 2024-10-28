@@ -13,12 +13,12 @@ EXIT_FAILURE gives a non-zero value
 
 ### Unsigned addition
 `   if (ui > UINT_MAX - sum)
-    {
-        too_big();
-    }
-    else
-    {
-      sum = sum + ui;
+    {<br/>
+        too_big();<br/>
+    }<br/>
+    else<br/>
+    {<br/>
+      sum = sum + ui;<br/>
     }`
 ### Unsigned subtraction
 `
