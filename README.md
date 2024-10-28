@@ -36,4 +36,10 @@ EXIT_FAILURE gives a non-zero value
     return (i >=0) ? i : -(unsigned)i;
 }`
 
+### Check values before conversion
+` ...(signed long value)
+    {
+        if ((value < SCHAR_MIN))...
+    }...`
+
 
