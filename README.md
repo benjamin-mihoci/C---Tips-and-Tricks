@@ -3,3 +3,7 @@
 
 ### Tip #1
 `if (something != 0)` is reduntant, use `if (something)` instead
+
+### Tipe #2
+`for (;;)` is basically the same as `while (true)`
+
